@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* background-image: url(fondo3.jfif);
+  background-size: 100% 100%;; */
+  background-color: red;
+}
+
+.hero{
+  display:flex;
+  background-color:cornflowerblue;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+img {
+  height: auto;
+  max-width: 20%;
+}
+
+
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header h1 .seo {
+  color: #d9dcd6;
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.About-Me {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue !important;
+}
+
+.About-Me p {
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 35px;
+}
+
+.Work {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 500px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+}
+
+h3 {
+  color:black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 800px;
+  height: 500px;
+}
+
+.Google {
+  height:200px;
+  width:200px;
+  background-image: url(./Google.jpg);
+  background-size: 100% 100%;
+}
+
+.Google:hover {
+  transform: scale(1.5);
+}
+
+.Youtube {
+  height:200px;
+  width:200px;
+  background-image: url(./youtube.png);
+  background-size: 100% 100%;
+}
+
+.Youtube:hover {
+  transform: scale(1.5);
+}
+
+.Contact-Me {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+}
+
+.Contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.Resume {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+}
+
+.About-Me h2 {
+  border: 5px blue;
+  width: 30%;
+  border-style: none solid none none;
+  font-size: 50px;
+  text-align: right;
+}
+
+.Work h2 {
+  width: 30%;
+  border: 5px blue;
+  border-style: none solid none none;
+  font-size: 50px;
+  text-align: right;
+}
+
+.Contact-Me h2 {
+  width: 30%;
+  border: 5px blue;
+  border-style: none solid none none;
+  font-size: 50px;
+  text-align: right;
+}
+
+.Resume h2 {
+  width: 30%;
+  border: 5px blue;
+  border-style: none solid none none;
+  font-size: 50px;
+  text-align: right;
+}
+
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+      flex-direction: column;
+  }
+  .container{
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  .About-Me {
+      flex-direction: column;
+  }
+  .Work {
+      flex-direction: column;
+      padding: 30px 0;
+  }
+}
