@@ -16,16 +16,6 @@ function Form() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    //   // Based on the input type, we set the state of either email, username, and password
-    //   if (inputType === 'email') {
-    //     setEmail(inputValue);
-    //   } else if (inputType === 'userName') {
-    //     setUserName(inputValue);
-    //   } else {
-    //     setPassword(inputValue);
-    //   }
-    // };
-
     // Based on the input type, we set the state of either email, username, and password
     if (inputType === 'vName') {
       setVName(inputValue);
@@ -34,6 +24,13 @@ function Form() {
     } else {
       setMessage(inputValue);
     }
+
+    // Check to see if the item text is empty
+    if (!message.text) {
+      setErrorMessage("message is required");
+      return;
+    }
+
   };
 
   const handleFormSubmit = (e) => {
@@ -53,6 +50,7 @@ function Form() {
     setVName('');
     setEmail('');
     setMessage('');
+    setErrorMessage('');    
   };
 
   return (
@@ -75,13 +73,15 @@ function Form() {
           type="email"
           placeholder="email"
         />
-        <label className="form-label">message</label>        
-        <input className="form-control mb-4"
+        <label className="form-label">message</label>
+        <textarea className="form-control mb-4"
+          required
           value={message}
           name="message"
           onChange={handleInputChange}
           type="message"
           placeholder="message"
+          rows="7"
         />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
