@@ -4,12 +4,33 @@
   margin: 0;
 }
 
+
+.cs-nav{
+  background-image: url(./components/utils/imgnav.jpg);
+}
+
 body {
   display: flex;
   flex-direction: column;
   background-image: url(fondo3.2.jpg);
   background-size: 100% 100%;;
   background-color: red;
+}
+
+form{
+  display: flex;
+  width: 100%;
+  flex-direction: column !important;
+}
+
+.form {
+  display: grid;
+}
+
+.cs-ul {
+  font-size: 17px;
+  color: green;
+  padding-left: 50px;
 }
 
 .hero{
@@ -27,7 +48,6 @@ img {
   height: auto;
   max-width: 20%;
 }
-
 
 .header {
   padding: 20px;
@@ -119,25 +139,47 @@ h3 {
   height: 500px;
 }
 
-.Google {
+.ch1 {
   height:200px;
   width:200px;
-  background-image: url(./Google.jpg);
+  background-image: url(./components/utils/ch1.JPG);
   background-size: 100% 100%;
 }
 
-.Google:hover {
+.ch1:hover {
   transform: scale(1.5);
 }
 
-.Youtube {
+.ch2 {
   height:200px;
   width:200px;
-  background-image: url(./youtube.png);
+  background-image: url(./components/utils/ch2.JPG);
   background-size: 100% 100%;
 }
 
-.Youtube:hover {
+.ch2:hover {
+  transform: scale(1.5);
+}
+
+.ch3 {
+  height:200px;
+  width:200px;
+  background-image: url(./components/utils/ch3.JPG);
+  background-size: 100% 100%;
+}
+
+.ch3:hover {
+  transform: scale(1.5);
+}
+
+.ch4 {
+  height:200px;
+  width:200px;
+  background-image: url(./components/utils/ch4.JPG);
+  background-size: 100% 100%;
+}
+
+.ch4:hover {
   transform: scale(1.5);
 }
 

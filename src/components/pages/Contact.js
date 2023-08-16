@@ -54,8 +54,8 @@ function Form() {
   };
 
   return (
-    <div>
-      <p>Contact</p>
+    <div id="About-Me" className="About-Me">
+      <h2>Contact</h2>
       <form className="mx-auto form-group form w-50 p-3">
         <label className="form-label">vName</label>
         <input className="form-control mb-4"
@@ -84,12 +84,12 @@ function Form() {
           rows="7"
         />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
-      </form>
       {errorMessage && (
         <div>
-          <p className="error-text position-absolute top-75 start-50 translate-middle">{errorMessage}</p>
+          <p className="error-text position-absolute bottom-0 end-0">{errorMessage}</p>
         </div>
       )}
+    </form>
     </div>
   );
 }
